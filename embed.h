@@ -22,4 +22,12 @@ typedef unsigned long long int int64;
 #define $c (char*)
 #define $i (int)
 
+enum e_language {
+    ASM,
+    C
+};
+typedef enum e_language language;
+
+void printheader(char*, language);
+void usage(char*);
 int main(int, char**);
